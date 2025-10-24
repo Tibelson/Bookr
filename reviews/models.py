@@ -28,7 +28,7 @@ class Contributor(models.Model):
     email = models.EmailField()
 
     def __str__(self):
-        return self.first_name + " " + self.last_name
+        return self.first_name 
 
 class BookContributor(models.Model):
     class ContributionRole(models.TextChoices):
